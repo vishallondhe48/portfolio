@@ -1,0 +1,10 @@
+$bp-xsm:0;
+$bp-sm:576px;
+$bp-md:768px;
+$bp-lg:1200px;
+$bp-xlg:1800px;
+
+
+@mixin container{
+    margin: 0 5vw;
+}
