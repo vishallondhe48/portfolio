@@ -1,12 +1,11 @@
 import './App.scss';
-import Nav from './components/Nav'
 import LandingPage from './pages/LandingPage'
+import Portfolio from './pages/Portfolio'
 
 function App() {
   return (
     <div className='App'>
-      <Nav />
-      <LandingPage />
+      <Portfolio />
     </div>
   );
 }

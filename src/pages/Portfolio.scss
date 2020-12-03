@@ -1,0 +1,21 @@
+.portfolio{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        font-size: 49px;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+    .card-container{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-gap:10px;
+        @media( max-width:576px){
+            grid-template-columns: repeat(1,auto);
+        }
+    }
+}
