@@ -1,6 +1,13 @@
 .card{
+    position: relative;
     width:300px ;
     height: 400px;
-    background: chocolate;
-    
-}
+    background: rgb(46, 92, 161);
+    h1{
+        color: white;
+        display: grid;
+        place-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}   
