@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+
+// class based form
 export class NameForm extends React.Component {
     constructor(props) {
         super(props);
@@ -32,25 +34,27 @@ export class NameForm extends React.Component {
 }
 
 
+// hooks based form
+
 export const HooksForm = () => {
-    const [name, setName] = useState('')
-    const handleChangeHooks = (e) => {
-        console.log(e)
-        setName(e.target.value)
-    }
-    useEffect(() => {
+    // const [name, setName] = useState('')
+    // const handleChangeHooks = (e) => {
+    //     console.log(e)
+    //     setName(e.target.value)
+    // }
+    // useEffect(() => {
 
-        handleChangeHooks
-        // return () => {
+    //     handleChangeHooks
+    //     // return () => {
 
-        // }
-    }, [])
+    //     // }
+    // }, [])
 
     return (
-        <form >
-            <input type="text" value={name} onChange={handleChangeHooks} />
-            <input type="submit" value='Submit' />
-        </form>
+        <h1>Hii</h1>
+        // <form >
+
+        // </form>
     )
 }
 
