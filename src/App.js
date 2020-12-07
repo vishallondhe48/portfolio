@@ -1,15 +1,11 @@
 import './App.scss';
-import { NameForm, HooksForm } from './pages/Contact'
-import Cursor from './components/Cursor'
-import Practice from './Practice'
-import Practiceprops from './Practiceprops'
+import Cards from './components/Cards'
 
 function App() {
 
   return (
     <div className='App'>
-      {/* <Cursor /> */}
-      <Practice />
+      <Cards />
 
     </div>
   );

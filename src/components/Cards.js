@@ -1,15 +1,15 @@
 import React from 'react'
-import Practiceprops from './Practiceprops'
-import './Practice.scss'
-import data from './data'
+import Card from './Card'
+import './Cards.scss'
+import data from '../data'
 
-const Practice = () => {
+const Cards = () => {
     return (
         <div className='cards'>
 
             {
                 data.map(data => (
-                    <Practiceprops key={data.id} props={data} />
+                    <Card key={data.id} props={data} />
                     // <Practiceprops name={name} />
                 ))
             }
@@ -18,4 +18,4 @@ const Practice = () => {
     )
 }
 
-export default Practice
+export default Cards
