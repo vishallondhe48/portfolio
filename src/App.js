@@ -1,12 +1,11 @@
 import './App.scss';
-import Cards from './components/Cards'
+import About from './pages/About'
 
 function App() {
 
   return (
     <div className='App'>
-      <Cards />
-
+      <About />
     </div>
   );
 }
