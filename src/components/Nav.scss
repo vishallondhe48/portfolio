@@ -1,4 +1,4 @@
-@import '../variables.scss';
+// @import '../variables.scss';
 .nav-wrapper{
     position: fixed;
     top: 0;
@@ -56,7 +56,7 @@
             text-transform: uppercase;
             }
      }
-     @media(max-width:$bp-md){
+     @media(max-width:768px){
          justify-content: center;
          .hamburger_btn{
             display: flex;

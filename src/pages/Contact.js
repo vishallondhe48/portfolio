@@ -1,60 +1,84 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import './Contact.scss'
 
 
-// class based form
-export class NameForm extends React.Component {
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
+class Contact extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { value: '' };
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.state = { name: "", email: "", message: "" };
     }
 
-    handleChange(e) {
-        this.setState({ value: e.target.value });
-    }
+    /* Here’s the juicy bit for posting the form submission */
 
-    handleSubmit(event) {
-        alert('A name was submitted: ' + this.state.value);
-        event.preventDefault();
-    }
+    handleSubmit = e => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...this.state })
+        })
+            .then(() => alert("Success!"))
+            .catch(error => alert(error));
+
+        e.preventDefault();
+    };
+
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
+        const { name, email, message } = this.state;
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Name:
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-                </label>
-                <input type="submit" value="Submit" />
-            </form>
+            <div className='contact-section'>
+                <div className="section-left">
+                    <h1>contact me</h1>
+                    <ul>
+                        <li>
+                            <a href=""><i className="fab fa-whatsapp-square"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i className="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i className="fab fa-discord"></i></a>
+                        </li >
+                    </ul >
+                    <p>Phone:+91-77227074785</p>
+                </div>
+                <div className="section-right">
+                    <form onSubmit={this.handleSubmit}>
+
+                        <label>
+                            Name:
+                            </label>
+                        <input type="text" name="name" value={name} onChange={this.handleChange} required />
+
+
+                        <label>
+                            Email:
+                            </label>
+                        <input type="email" name="email" value={email} onChange={this.handleChange} required />
+
+
+                        <label>
+                            Message:
+                            </label>
+                        <textarea name="message" value={message} onChange={this.handleChange} required />
+
+                        <button type="submit">Send</button>
+
+                    </form>
+
+                </div>
+
+            </div>
         );
     }
 }
 
-
-// hooks based form
-
-export const HooksForm = () => {
-    // const [name, setName] = useState('')
-    // const handleChangeHooks = (e) => {
-    //     console.log(e)
-    //     setName(e.target.value)
-    // }
-    // useEffect(() => {
-
-    //     handleChangeHooks
-    //     // return () => {
-
-    //     // }
-    // }, [])
-
-    return (
-        <h1>Hii</h1>
-        // <form >
-
-        // </form>
-    )
-}
+export default Contact
 
