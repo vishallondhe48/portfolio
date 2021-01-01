@@ -6,23 +6,34 @@ const Nav = () => {
 
     const handleToggle = () => {
         setState(!state)
+        console.log(state)
+    }
+    const handleClick = () => {
+        console.log('clicked!')
     }
     return (
-        <div className='nav-wrapper'>
-            <nav>
-                <a href="#" className='logo'>vishal londhe</a>
-                <div className='hamburger_btn' onClick={handleToggle}>
-                    <div className={state ? 'bar change1' : 'bar'}></div>
-                    <div className={state ? 'bar change2' : 'bar'}></div>
-                    <div className={state ? 'bar change3' : 'bar'}></div>
+
+        <nav>
+            <div className="wrapper container">
+                {/* logo */}
+                <a href="#" id='logo'>vishal</a>
+
+                <div className="toggler-btn">
+                    <button onClick={handleToggle}>submit</button>
                 </div>
-                <ul>
+                {/* nav-links */}
+                <div className={state ? 'nav-links active' : 'nav-links'}>
+                    <a href="#">portfolio</a>
                     <a href="#">about</a>
-                    <a href="#">work</a>
                     <a href="#">contact</a>
-                </ul>
-            </nav>
-        </div>
+                </div>
+            </div>
+
+
+            {/* navbar-toggler */}
+
+        </nav>
+
     )
 }
 

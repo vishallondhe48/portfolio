@@ -33,49 +33,54 @@ class Contact extends React.Component {
     render() {
         const { name, email, message } = this.state;
         return (
-            <div className='contact-section'>
+            <div className='Contact'>
                 <div className="section-left">
-                    <h1>contact me</h1>
+                    <div><h1><span>Let's</span><br />
+                    get in touch</h1>
+                        <img src="./images/ant-design_message-filled.png" alt="" /></div>
                     <ul>
-                        <li>
-                            <a href=""><i className="fab fa-whatsapp-square"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i className="fab fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i className="fab fa-discord"></i></a>
-                        </li >
+                        <a>
+                            <img src="./images/uil_linkedin.svg" alt="" />
+                        </a>
+                        <a>
+                            <img src="./images/uim_whatsapp.svg" alt="" />
+                        </a>
+                        <a>
+                            <img src="./images/bx_bxl-discord.svg" alt="" />
+                        </a >
                     </ul >
                     <p>Phone:+91-77227074785</p>
-                </div>
+                </div >
                 <div className="section-right">
                     <form onSubmit={this.handleSubmit}>
 
-                        <label>
+                        <p><label>
                             Name:
                             </label>
-                        <input type="text" name="name" value={name} onChange={this.handleChange} required />
-
-
-                        <label>
+                            <input type="text" name="name" value={name} onChange={this.handleChange} required /></p>
+                        <p><label>
                             Email:
                             </label>
-                        <input type="email" name="email" value={email} onChange={this.handleChange} required />
-
-
-                        <label>
+                            <input type="email" name="email" value={email} onChange={this.handleChange} required /></p>
+                        <p><label>
                             Message:
                             </label>
-                        <textarea name="message" value={message} onChange={this.handleChange} required />
+                            <textarea name="message" value={message} onChange={this.handleChange} required /></p>
 
-                        <button type="submit">Send</button>
+
+
+
+
+
+
+
+                        <button type="submit">send message</button>
 
                     </form>
 
                 </div>
 
-            </div>
+            </div >
         );
     }
 }

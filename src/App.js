@@ -1,20 +1,14 @@
-import './App.scss';
-import Contact from './pages/Contact'
-import About from './pages/About'
-import LandingPage from './pages/LandingPage'
-import Portfolio from './pages/Portfolio'
 
-function App() {
+import React from 'react'
+import './styles.scss'
+import Nav from './components/Nav'
 
+const App = () => {
   return (
-    <div className='App'>
-      <LandingPage />
-      <Portfolio />
-      <About />
-      <Contact />
-      <p className='footer'>&copy; created by vishal londhe</p>
-    </div>
-  );
+    <>
+      <Nav />
+    </ >
+  )
 }
 
-export default App;
+export default App

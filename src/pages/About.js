@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className='about'>
             <section className="left">
-                <img src="./images/Saly-13.png" width='600px' height='auto' alt="" />
+                <img src="https://images.unsplash.com/flagged/photo-1574874897534-036671407eda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=398&q=80" alt="" />
             </section>
             <section className="right">
                 <h2>About <span>me</span> </h2>

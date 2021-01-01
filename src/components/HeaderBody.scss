@@ -1,40 +1,40 @@
 // @import '../variables.scss';
 
-.HeaderBody{
-    margin-top: 12vh;
-   display: flex;
-   align-items: center;
-   
-    .img-section{
+.HeaderBody {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .img-section {
         width: 100%;
-        img{
+        img {
             width: 50vw;
         }
-        margin-right: 4vw;        
+        margin-right: 4vw;
     }
-    .text-section{
-        font-family: 'Montserrat', sans-serif;
-        font-weight:400;
+    .text-section {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
         width: 100%;
-        
-        p{
+
+        p {
             font-size: 25px;
             margin: 15px 0;
         }
-        .name{
+        .name {
             font-size: 35px;
             font-weight: 500;
         }
-        .desc{
+        .desc {
             font-size: 21px;
-            .highlight{
+            .highlight {
                 font-size: 29px;
-                color: #2F57BE;
+                color: #2f57be;
                 font-weight: bold;
             }
             margin-bottom: 40px;
         }
-        a{
+        a {
             text-decoration: none;
             color: white;
             text-transform: uppercase;
@@ -42,14 +42,12 @@
             padding: 10px 15px;
             font-size: 12px;
             border-radius: 12px;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            
         }
     }
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         flex-direction: column;
-        .img-section{
-            img{
+        .img-section {
+            img {
                 width: 100vw;
             }
         }

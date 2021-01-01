@@ -1,0 +1,37 @@
+@import "./fonts";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// setting the base font size
+
+html {
+  font-size: 16px;
+  font-family: $font-body;
+}
+
+// container
+
+.container {
+  margin: 0 5vw;
+  @media (min-width: 900px) {
+    margin: 0 10vw;
+  }
+}
+
+// setting text-decoration of all anchor tags to none
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+// setting the logo font-family
+
+#logo {
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: $logo-size;
+}
