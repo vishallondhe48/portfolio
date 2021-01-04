@@ -1,7 +1,7 @@
 import React from 'react'
-import './HeaderBody.scss'
+import './HeroSection.scss'
 
-const HeaderBody = () => {
+const HeaderSection = () => {
     return (
         <div className='HeaderBody'>
             <div className='img-section'>

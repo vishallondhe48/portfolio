@@ -1,5 +1,9 @@
 nav {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000000000000000;
     .wrapper {
         display: flex;
         justify-content: space-between;
@@ -93,10 +97,8 @@ nav {
             a {
                 margin: 2rem 0;
                 font-size: 2rem;
-
+                opacity: 0;
                 color: #fff;
-                transform: translateX(100%);
-                transform: transform 0.2s ease;
             }
         }
         .active {
@@ -106,8 +108,7 @@ nav {
             a {
                 margin-left: 15%;
                 font-size: 2rem;
-                transform: translateX(0);
-                transform: transform 0.3s ease;
+                opacity: 1;
                 &:hover {
                     transform: scale(1.1);
                     transition: transform 0.1s ease;
@@ -130,6 +131,7 @@ nav {
                 a {
                     color: #000;
                     font-size: 16px;
+                    opacity: 1;
                     margin: 0 1rem;
                     &:last-of-type {
                         margin-right: 0;
