@@ -8,9 +8,7 @@ const Nav = () => {
         setState(!state)
         console.log(state)
     }
-    const handleClick = () => {
-        console.log('clicked!')
-    }
+
     return (
 
         <nav>
@@ -18,15 +16,23 @@ const Nav = () => {
                 {/* logo */}
                 <a href="#" id='logo'>vishal</a>
 
-                <div className="toggler-btn">
-                    <button onClick={handleToggle}>submit</button>
+
+                {/* hamburger toggle */}
+                <div className="menu-link-wrapper">
+                    <div className={state ? "menu-link menu-trigger-open" : 'menu-link'} onClick={handleToggle}>
+                        <span className="lines"></span>
+                    </div>
                 </div>
+
+
+
                 {/* nav-links */}
                 <div className={state ? 'nav-links active' : 'nav-links'}>
                     <a href="#">portfolio</a>
                     <a href="#">about</a>
                     <a href="#">contact</a>
                 </div>
+
             </div>
 
 
