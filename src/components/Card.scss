@@ -1,75 +1,83 @@
-// // flip-card
-
-// .flip-card {
-//   font-family: sans-serif;
-//   background-color: transparent;
-//   width: 300px;
-//   height: 400px;
-//   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-//   .flip-card-inner {
-//     position: relative;
-//     width: 100%;
-//     height: 100%;
-//     text-align: center;
-//     transition: transform 0.8s;
-//     transform-style: preserve-3d;
-//     .flip-card-front,
-//     .flip-card-back {
-//       position: absolute;
-//       width: 100%;
-//       height: 100%;
-//       -webkit-backface-visibility: hidden; /* Safari */
-//       backface-visibility: hidden;
-//     }
-//     .flip-card-front {
-//       background-color: #bbb;
-//       color: black;
-//       img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//         overflow: hidden;
-//       }
-//     }
-//     .flip-card-back {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       padding: 0 10px;
-//       align-items: center;
-//       background-color: dodgerblue;
-//       color: white;
-//       transform: rotateY(180deg);
-//       h1 {
-//         font-size: 2rem;
-//       }
-//       p {
-//         font-size: 14px;
-//         text-transform: uppercase;
-//       }
-//       a {
-//         color: green;
-//         text-decoration: none;
-//         text-transform: uppercase;
-//         background: #000;
-//         padding: 12px 20px;
-//         margin: 5px;
-//         font-size: 14px;
-//         border-radius: 8px;
-//       }
-//     }
-//   }
-// }
-
-// .flip-card:hover .flip-card-inner {
-//   transform: rotateY(180deg);
-// }
-.card-wrapper {
+.card {
+  position: relative;
+  width: 300px !important;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  .card {
-    height: 200px;
-    background: skyblue;
-    flex: 0 1 250px;
+  justify-content: center;
+  align-items: center;
+  background: #004e89;
+  padding: 1rem;
+  border-radius: 10px;
+  .card-title {
+    position: absolute;
+    text-align: center;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    width: inherit;
+    transition: all 0.5s ease;
+  }
+  .overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    width: 80%;
+    opacity: 0;
+    transform: translateY(10%);
+    pointer-events: none;
+    .button {
+      display: flex;
+      gap: 10px;
+      .btn {
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #fff;
+        pointer-events: visible;
+      }
+      .btn-live {
+        background: darkviolet;
+        // background: linear-gradient(to right, #3b28cc, white, #3b28cc);
+        // background-size: 800%;
+        // background-origin: left center;
+        // transition: background 0.5s;
+        // &:hover {
+        //   background-position: right center;
+        //   transition: background 0.5s;
+        // }
+      }
+      .btn-github {
+        background: darksalmon;
+        // background: linear-gradient(to right, #2d2d2d, white, #2d2d2d);
+        // background-size: 800%;
+        // background-origin: left center;
+        // transition: background 0.5s;
+        // &:hover {
+        //   background-position: right center;
+        //   transition: background 0.5s;
+        // }
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .card-title {
+      color: black;
+      opacity: 0;
+    }
+    .overlay {
+      opacity: 1;
+      color: #fff;
+      transform: translate(0);
+      transition: transform 0.5s;
+    }
   }
 }
