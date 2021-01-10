@@ -33,54 +33,44 @@ class Contact extends React.Component {
     render() {
         const { name, email, message } = this.state;
         return (
-            <div className='Contact'>
-                <div className="section-left">
-                    <div><h1><span>Let's</span><br />
-                    get in touch</h1>
-                        <img src="./images/ant-design_message-filled.png" alt="" /></div>
-                    <ul>
-                        <a>
-                            <img src="./images/uil_linkedin.svg" alt="" />
-                        </a>
-                        <a>
-                            <img src="./images/uim_whatsapp.svg" alt="" />
-                        </a>
-                        <a>
-                            <img src="./images/bx_bxl-discord.svg" alt="" />
-                        </a >
-                    </ul >
-                    <p>Phone:+91-77227074785</p>
+            <>
+                <div className='contact container'>
+                    <div className="section-left box">
+                        <h2 className='title'>Let's get in touch.</h2>
+                    </div>
+                    <div className="section-right box">
+
+                        <form onSubmit={this.handleSubmit}>
+                            {/* name */}
+                            <h2 className='heading'>Contact us</h2>
+                            <div className="form-grp">
+                                <input type="text" name="name" value={name} onChange={this.handleChange} required />
+                                <label htmlFor="name">name</label>
+                            </div>
+
+                            {/* email */}
+                            <div className="form-grp">
+                                <input type="email" name="email" value={email} onChange={this.handleChange} required />
+                                <label htmlFor="email">email</label>
+                            </div>
+
+                            {/* message */}
+                            <div className="form-grp">
+                                <textarea name="message" cols="30" rows="3" value={message} onChange={this.handleChange} required />
+                                <label htmlFor="message">message</label>
+                            </div>
+
+                            {/* submit */}
+                            <button type="submit" className='btn'>send</button>
+
+                        </form>
+                        <div className="social-icons">
+                            <a href="#"></a>
+                        </div>
+                    </div >
+
                 </div >
-                <div className="section-right">
-                    <form onSubmit={this.handleSubmit}>
-
-                        <p><label>
-                            Name:
-                            </label>
-                            <input type="text" name="name" value={name} onChange={this.handleChange} required /></p>
-                        <p><label>
-                            Email:
-                            </label>
-                            <input type="email" name="email" value={email} onChange={this.handleChange} required /></p>
-                        <p><label>
-                            Message:
-                            </label>
-                            <textarea name="message" value={message} onChange={this.handleChange} required /></p>
-
-
-
-
-
-
-
-
-                        <button type="submit">send message</button>
-
-                    </form>
-
-                </div>
-
-            </div >
+            </>
         );
     }
 }
