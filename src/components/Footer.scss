@@ -1,0 +1,15 @@
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: pink;
+    width: 100%;
+    a {
+        margin: 0 1rem;
+        padding: 1.5rem 0;
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
