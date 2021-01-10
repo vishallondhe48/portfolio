@@ -10,7 +10,7 @@ const Cards = () => {
             {
                 data.map(data => (
                     <Card key={data.id} props={data} />
-                    // <Practiceprops name={name} />
+
                 ))
             }
 
