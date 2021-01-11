@@ -1,3 +1,5 @@
+$text-color: #fff;
+
 nav {
     position: fixed;
     top: 0;
@@ -11,6 +13,7 @@ nav {
 
         // logo
         #logo {
+            color: $text-color;
             margin: 2rem 0;
         }
 
@@ -98,7 +101,7 @@ nav {
                 margin: 2rem 0;
                 font-size: 2rem;
                 opacity: 0;
-                color: #fff;
+                color: $text-color;
             }
         }
         .active {
@@ -130,7 +133,7 @@ nav {
                 background: transparent;
 
                 a {
-                    color: #000;
+                    color: $text-color;
                     font-size: 16px;
                     opacity: 1;
                     margin: 0 1rem;

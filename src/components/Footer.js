@@ -4,22 +4,26 @@ import './Footer.scss'
 const Footer = () => {
     return (
         <>
-            <div className="social-links">
-                <a href="#">
-                    <img src='./images/et_facebook.png' alt="" />
-                </a>
-                <a href="#">
-                    <img src='./images/et_linkedin.png' alt="" />
-                </a>
-                <a href="#">
-                    <img src='./images/et_twitter.png' alt="" />
-                </a>
-                <a href="#">
-                    <img src='./images/Vector.png' alt="" />
-                </a>
+            <footer>
+                <div className="social-links">
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
 
 
-            </div>
+
+                </div>
+                <p>&copy; copyright by vishal londhe 2021</p>
+            </footer>
         </>
     )
 }

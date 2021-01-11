@@ -1,3 +1,5 @@
+$text-color: #fff;
+
 .parent {
     display: flex;
     flex-wrap: wrap;
@@ -7,6 +9,7 @@
         flex: 1 1 450px;
     }
     .box-1 {
+        color: $text-color;
         opacity: 1;
         transition: transform 0.5s;
         transform: translateX(0);
