@@ -9,7 +9,7 @@ const Portfolio = () => {
 
         <>
             <div className="portfolio container">
-                <h2 className='title'>portfolio</h2>
+                <h2 className='section-title'>portfolio.</h2>
                 <Cards />
             </div>
         </>

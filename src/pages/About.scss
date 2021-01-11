@@ -1,7 +1,9 @@
 $text-color: #fff;
 
 .about {
+    position: relative;
     min-height: 100vh;
+
     padding-top: 15vh;
     .title {
         text-transform: capitalize;
@@ -12,7 +14,7 @@ $text-color: #fff;
         color: $text-color;
         display: flex;
         flex-wrap: wrap;
-        height: 50vh;
+
         .box {
             flex: 1 1 300px;
         }

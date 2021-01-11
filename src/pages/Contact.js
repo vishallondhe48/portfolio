@@ -36,7 +36,7 @@ class Contact extends React.Component {
             <>
                 <div className='contact container'>
                     <div className="section-left box">
-                        <h2 className='title'>Let's get in touch.</h2>
+                        <h2 className='section-title'>Let's get in touch.</h2>
                     </div>
                     <div className="section-right box">
 

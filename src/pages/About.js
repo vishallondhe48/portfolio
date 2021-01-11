@@ -5,7 +5,7 @@ const About = () => {
     return (
         <>
             <div className="about container">
-                <h2 className='title'>about me.</h2>
+                <h2 className='section-title'>about me.</h2>
                 <div className="about-section">
                     <div className="img-section box">
                         <img src="./images/profile-icon-male-avatar-hipster-man-wear-headphones_48369-8728.jpg" alt="" />
