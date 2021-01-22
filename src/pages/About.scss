@@ -14,14 +14,19 @@ $text-color: #fff;
         color: $text-color;
         display: flex;
         flex-wrap: wrap;
-
-        .box {
-            flex: 1 1 300px;
-        }
+        justify-content: flex-start;
+        // .box {
+        //     flex: 1 1 300px;
+        // }
         .img-section {
+            margin-right: 70px;
             img {
                 height: 300px;
             }
+        }
+        .text-section {
+            width: 400px;
+            font-size: 1.2rem;
         }
     }
 }

@@ -29,37 +29,32 @@ $text-color: #fff;
             margin-bottom: 15vh;
         }
         form {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            color: $text-color;
-            // border-radius: 15px;
+            // position: relative;
+            // display: flex;
+            width: 400px;
+            // display: flex;
 
-            // padding-bottom: 10vh;
+            // flex-direction: column;
+            color: $text-color;
+
             padding-bottom: 1.5em;
             font-size: 16px;
-            // box-shadow: 0 4px 4px rgba(black, 0.5);
+
             .heading {
                 text-align: center;
                 text-transform: uppercase;
                 padding-bottom: 2rem;
             }
             .btn {
-                // position: absolute;
-                // // bottom: -70px;
-                // bottom: 5vh;
-                cursor: pointer;
-                border: none;
+                padding: 0.75rem 1.5rem;
+                font-size: 16px;
                 outline: none;
-                padding: 10px 25px;
-                font-size: 1rem;
-                background: orangered;
-                color: $text-color;
+                border: none;
                 text-transform: uppercase;
-                border-radius: 25px;
+                border-radius: 20px;
             }
             .form-grp {
+                margin: 30px 0;
                 position: relative;
                 text-transform: capitalize;
                 input:-webkit-autofill,
@@ -74,7 +69,8 @@ $text-color: #fff;
                 }
                 input,
                 textarea {
-                    width: 100%;
+                    // margin: 30px 0;
+                    width: 400px;
                     outline: none;
                     font-size: 16px;
                     background: transparent;
@@ -87,9 +83,9 @@ $text-color: #fff;
                 input:valid + label,
                 textarea:focus + label,
                 textarea:valid + label {
-                    transform: translateY(-75%);
+                    transform: translateY(-50%);
                     transition: 0.5s ease;
-                    color: rgb(37, 89, 185);
+                    color: #fff;
                     opacity: 1;
                 }
                 input:focus,

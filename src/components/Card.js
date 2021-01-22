@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import './Card.scss'
 
@@ -9,8 +7,8 @@ const Card = ({ props }) => {
     return (
         <>
             <div className='card'>
-
-                <h2 className='card-title'>{props.name}</h2>
+                <img src={props.image} width={300} height={200} alt="" />
+                {/* <h2 className='card-title'>{props.name}</h2>
 
                 <div className='overlay'>
                     <p>{props.description}</p>
@@ -19,7 +17,7 @@ const Card = ({ props }) => {
                         <a href={props.linkLiveDemo} className='btn btn-github'>Live Demo</a>
                     </div>
 
-                </div>
+                </div> */}
             </div>
 
         </>

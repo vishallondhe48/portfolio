@@ -11,8 +11,13 @@ const About = () => {
                         <img src="./images/profile-icon-male-avatar-hipster-man-wear-headphones_48369-8728.jpg" alt="" />
                     </div>
                     <div className="text-section box">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolores quaerat eveniet aut quasi reprehenderit deleniti vero nisi modi quae, aliquid repellat. Quis explicabo enim possimus quibusdam magni quasi dolorum in sint corporis velit blanditiis quaerat aliquam, minima facere suscipit magnam rem fugiat reprehenderit molestias similique reiciendis consectetur unde tenetur!
+                        <p>
+                            Hello, my name is vishal londhe and i am self taught web developer.
+                            i can design and create websites using html,css, javascript and frontend frameworks like react.
+                        </p>
+                        <p>I also use backend technologies likes of express, mongoDB to create full stack web sites.</p>
                     </div>
+
                 </div>
             </div>
         </>

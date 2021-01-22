@@ -1,26 +1,23 @@
-.cursor-dot{
+.cursor-dot {
     z-index: 1000;
     width: 8px;
     height: 8px;
-    
+
     border-radius: 50%;
-    background: rgb(148, 95, 95);
+    background: #fff;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     pointer-events: none;
-   
 }
-.cursor-dot-outline{
+.cursor-dot-outline {
     z-index: 1000;
     width: 3rem;
     height: 3rem;
-    
+
     border-radius: 50%;
-    background: rgba(148, 95, 95, 0.514);
+    background: transparent;
+    border: 1px solid #fff;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     pointer-events: none;
-   
 }
-
-

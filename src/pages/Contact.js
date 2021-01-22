@@ -42,7 +42,6 @@ class Contact extends React.Component {
 
                         <form onSubmit={this.handleSubmit}>
                             {/* name */}
-                            {/* <h2 className='heading'>Contact us</h2> */}
                             <div className="form-grp">
                                 <input type="text" name="name" value={name} onChange={this.handleChange} required />
                                 <label htmlFor="name">name</label>
@@ -64,9 +63,7 @@ class Contact extends React.Component {
                             <button type="submit" className='btn'>send</button>
 
                         </form>
-                        {/* <div className="social-icons">
-                            <a href="#"></a>
-                        </div> */}
+
                     </div >
 
                 </div >

@@ -7,16 +7,16 @@ const Footer = () => {
             <footer>
                 <div className="social-links">
                     <a href="#">
-                        <i class="fab fa-facebook"></i>
+                        <i className="fab fa-facebook"></i>
                     </a>
                     <a href="#">
-                        <i class="fab fa-discord"></i>
+                        <i className="fab fa-discord"></i>
                     </a>
                     <a href="#">
-                        <i class="fab fa-twitter"></i>
+                        <i className="fab fa-twitter"></i>
                     </a>
                     <a href="#">
-                        <i class="fab fa-linkedin-in"></i>
+                        <i className="fab fa-linkedin-in"></i>
                     </a>
 
 
