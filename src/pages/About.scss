@@ -3,14 +3,17 @@ $text-color: #fff;
 .about {
     position: relative;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    padding-top: 15vh;
     .title {
         text-transform: capitalize;
         font-size: 5rem;
         color: $text-color;
     }
     .about-section {
+        margin-top: 3rem;
         color: $text-color;
         display: flex;
         flex-wrap: wrap;

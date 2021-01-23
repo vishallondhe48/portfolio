@@ -1,6 +1,7 @@
 $text-color: #fff;
 
 .parent {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
@@ -29,6 +30,7 @@ $text-color: #fff;
             letter-spacing: 0.5rem;
             opacity: 0.7;
             font-weight: 400;
+            margin-bottom: 2rem;
         }
         .cta {
             margin-top: 1.5rem;
@@ -45,14 +47,40 @@ $text-color: #fff;
         transition: transform 0.5s;
         transform: translateX(-100%);
     }
-    .box-2 {
-        display: none;
 
-        @media screen and (min-width: 768px) {
-            display: block;
-            img {
-                width: 480px;
+    .moving-mouse-holder {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 70vh;
+        height: 10vh;
+        margin: auto;
+        margin-top: 60px;
+        width: 100%;
+        .mouse {
+            width: 46px;
+            height: 60px;
+            position: relative;
+            right: 0;
+            border-radius: 18px;
+            border: 2px solid #fff;
+            .mouse-button {
+                background: #fff;
+                width: 10px;
+                height: 20px;
+                border-radius: 15px;
+                position: absolute;
+                top: 10px;
+                left: 45%;
+                margin: 0 0 0 -2px;
+                animation: mouse-scroll 1s infinite alternate;
             }
+        }
+    }
+
+    @keyframes mouse-scroll {
+        to {
+            transform: translate(0, 6px) scale(1, 0.8);
         }
     }
 }

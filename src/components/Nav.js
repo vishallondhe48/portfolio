@@ -14,7 +14,7 @@ const Nav = () => {
         <nav>
             <div className="wrapper container">
                 {/* logo */}
-                <a href="#" id='logo'>vishal</a>
+                <a href="/" id='logo'>vishal</a>
 
 
                 {/* hamburger toggle */}
@@ -28,9 +28,9 @@ const Nav = () => {
 
                 {/* nav-links */}
                 <div className={state ? 'nav-links active' : 'nav-links'}>
-                    <a href="#">portfolio</a>
-                    <a href="#">about</a>
-                    <a href="#">contact</a>
+                    <a href="#portfolio">portfolio</a>
+                    <a href="#about">about</a>
+                    <a href="#contact">contact</a>
                 </div>
 
             </div>

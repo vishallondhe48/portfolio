@@ -1,5 +1,6 @@
 .cursor-dot {
-    z-index: 1000;
+    position: relative;
+    z-index: 10000000;
     width: 8px;
     height: 8px;
 
@@ -10,7 +11,9 @@
     pointer-events: none;
 }
 .cursor-dot-outline {
-    z-index: 1000;
+    position: relative;
+
+    z-index: 1000000000;
     width: 3rem;
     height: 3rem;
 

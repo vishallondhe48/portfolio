@@ -34,7 +34,7 @@ class Contact extends React.Component {
         const { name, email, message } = this.state;
         return (
             <>
-                <div className='contact container'>
+                <div className='contact container' id='contact'>
                     <div className="section-left box">
                         <h2 className='section-title'>Let's get in touch.</h2>
                     </div>
@@ -43,13 +43,15 @@ class Contact extends React.Component {
                         <form onSubmit={this.handleSubmit}>
                             {/* name */}
                             <div className="form-grp">
-                                <input type="text" name="name" value={name} onChange={this.handleChange} required />
+                                <input type="text" name="name" value={name} onChange={this.handleChange} required
+                                />
                                 <label htmlFor="name">name</label>
                             </div>
 
                             {/* email */}
                             <div className="form-grp">
-                                <input type="email" name="email" value={email} onChange={this.handleChange} required />
+                                <input type="email" name="email" value={email} onChange={this.handleChange} required
+                                />
                                 <label htmlFor="email">email</label>
                             </div>
 

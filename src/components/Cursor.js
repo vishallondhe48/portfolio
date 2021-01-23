@@ -24,8 +24,11 @@ const Cursor = () => {
 
     return (
         <>
-            <div className="cursor-dot" ref={cursor} ></div>
-            <div className="cursor-dot-outline" ref={cursor_dot_outline}></div>
+            <div className="cursor">
+                <div className="cursor-dot" ref={cursor} ></div>
+                <div className="cursor-dot-outline" ref={cursor_dot_outline}></div>
+            </div>
+
         </>
     )
 }

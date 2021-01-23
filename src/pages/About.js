@@ -4,7 +4,7 @@ import './About.scss'
 const About = () => {
     return (
         <>
-            <div className="about container">
+            <div className="about container" id='about'>
                 <h2 className='section-title'>about me.</h2>
                 <div className="about-section">
                     <div className="img-section box">
@@ -19,7 +19,9 @@ const About = () => {
                     </div>
 
                 </div>
+
             </div>
+
         </>
     )
 }

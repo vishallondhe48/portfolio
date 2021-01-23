@@ -10,6 +10,7 @@ $text-color: #fff;
     flex-wrap: wrap;
     align-items: center;
     min-height: 100vh;
+
     .box {
         flex: 1 1 300px;
     }
@@ -64,6 +65,7 @@ $text-color: #fff;
                 textarea:-webkit-autofill:hover,
                 textarea:-webkit-autofill:focus {
                     -webkit-text-fill-color: $text-color;
+                    cursor: none;
                     -webkit-box-shadow: 0 0 0px 1000px #080808 inset;
                     transition: background-color 5000s ease-in-out 0s;
                 }
@@ -83,6 +85,8 @@ $text-color: #fff;
                 input:valid + label,
                 textarea:focus + label,
                 textarea:valid + label {
+                    cursor: none;
+
                     transform: translateY(-50%);
                     transition: 0.5s ease;
                     color: #fff;
@@ -92,6 +96,8 @@ $text-color: #fff;
                 input:valid,
                 textarea:focus,
                 textarea:valid {
+                    cursor: none;
+
                     border-bottom: 1px solid rgba(white, 1);
                 }
                 label {

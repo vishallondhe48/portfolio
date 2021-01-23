@@ -1,86 +1,63 @@
-// .card {
-//   position: relative;
-//   width: 300px !important;
-//   height: 200px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   background: #004e89;
-//   padding: 1rem;
-//   border-radius: 10px;
-//   .card-title {
-//     position: absolute;
-//     text-align: center;
-//     opacity: 1;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     font-size: 2rem;
-//     color: white;
-//     width: inherit;
-//     transition: all 0.5s ease;
-//   }
-//   .overlay {
-//     position: absolute;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     height: 80%;
-//     width: 80%;
-//     opacity: 0;
-//     transform: translateY(10%);
-//     pointer-events: none;
-//     .button {
-//       display: flex;
-//       gap: 10px;
-//       .btn {
-//         text-decoration: none;
-//         text-transform: capitalize;
-//         padding: 10px 15px;
-//         border-radius: 20px;
-//         cursor: pointer;
-//         color: #fff;
-//         pointer-events: visible;
-//       }
-//       .btn-live {
-//         background: darkviolet;
-//         // background: linear-gradient(to right, #3b28cc, white, #3b28cc);
-//         // background-size: 800%;
-//         // background-origin: left center;
-//         // transition: background 0.5s;
-//         // &:hover {
-//         //   background-position: right center;
-//         //   transition: background 0.5s;
-//         // }
-//       }
-//       .btn-github {
-//         background: darksalmon;
-//         // background: linear-gradient(to right, #2d2d2d, white, #2d2d2d);
-//         // background-size: 800%;
-//         // background-origin: left center;
-//         // transition: background 0.5s;
-//         // &:hover {
-//         //   background-position: right center;
-//         //   transition: background 0.5s;
-//         // }
-//       }
-//     }
-//   }
-//   &:hover {
-//     cursor: pointer;
-//     .card-title {
-//       color: black;
-//       opacity: 0;
-//     }
-//     .overlay {
-//       opacity: 1;
-//       color: #fff;
-//       transform: translate(0);
-//       transition: transform 0.5s;
-//     }
-//   }
-// }
+.card {
+    position: relative;
+    width: 300px !important;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #004e89;
+    padding: 1rem;
+    border-radius: 10px;
+
+    .overlay {
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+        .card-title {
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: center;
+        }
+        .button {
+            display: flex;
+            gap: 10px;
+            .btn {
+                display: inline-block;
+                text-decoration: none;
+                text-transform: capitalize;
+                padding: 10px 15px;
+                border-radius: 20px;
+                cursor: pointer;
+                color: #fff;
+                pointer-events: visible;
+                border: 1px solid #fff;
+                &:hover {
+                    background: #000;
+                    color: #fff;
+                    border: none;
+                }
+            }
+        }
+    }
+    &:hover {
+        cursor: pointer;
+
+        .overlay {
+            opacity: 1;
+            color: #fff;
+
+            transition: 0.5s;
+        }
+    }
+}
 // .card {
 //   img {
 //     width: 300px;
