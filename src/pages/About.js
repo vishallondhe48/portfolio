@@ -16,6 +16,9 @@ const About = () => {
                             i can design and create websites using html,css, javascript and frontend frameworks like react.
                         </p>
                         <p>I also use backend technologies likes of express, mongoDB to create full stack web sites.</p>
+
+                        <a href="https://drive.google.com/file/d/1IcK9SXMbBh87zMLAV-bPa2uJ30Ea1KlT/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='cta'>Download Resume</a>
+
                     </div>
 
                 </div>
