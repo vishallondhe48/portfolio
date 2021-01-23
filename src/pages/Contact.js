@@ -11,7 +11,8 @@ const encode = (data) => {
 class Contact extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { name: "", email: "", message: "" };
+        this.state = { name: "", email: "", message: "", successMessage: "" };
+
     }
 
     /* Here’s the juicy bit for posting the form submission */
@@ -22,7 +23,7 @@ class Contact extends React.Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...this.state })
         })
-            .then(() => this.setState({ name: "", email: "", message: "" }))
+            .then(() => this.setState({ name: "", email: "", message: "", successMessage: "your form have been submitted!" }))
             .catch(error => alert(error));
 
         e.preventDefault();
@@ -65,7 +66,7 @@ class Contact extends React.Component {
                             <button type="submit" className='btn'>send</button>
 
                         </form>
-
+                        <p className='messageBox'>{this.successMessage}</p>
                     </div >
 
                 </div >
