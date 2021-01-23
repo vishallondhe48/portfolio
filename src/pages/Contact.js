@@ -32,7 +32,7 @@ class Contact extends React.Component {
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
-        const { name, email, message } = this.state;
+        const { name, email, message, successMessage } = this.state;
         return (
             <>
                 <div className='contact container' id='contact'>
@@ -65,8 +65,12 @@ class Contact extends React.Component {
                             {/* submit */}
                             <button type="submit" className='btn'>send</button>
 
+                            {console.log(name)}
+                            {console.log(email)}
+                            {console.log(message)}
+                            {console.log(successMessage)}
                         </form>
-                        <p className='messageBox'>{this.successMessage}</p>
+                        <p className='successMessage'>{successMessage}</p>
                     </div >
 
                 </div >
