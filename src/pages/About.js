@@ -17,7 +17,7 @@ const About = () => {
                         </p>
                         <p>I also use backend technologies likes of express, mongoDB to create full stack web sites.</p>
 
-                        <a href="https://drive.google.com/file/d/1IcK9SXMbBh87zMLAV-bPa2uJ30Ea1KlT/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='cta'>Download Resume</a>
+                        <a href="https://drive.google.com/file/d/1_WAY5s3VZ0MX1qdzPci4F24pvK8sNV5c/view?usp=sharing" target="_blank" rel="noopener noreferrer" className='cta'>Download Resume</a>
 
                     </div>
 
