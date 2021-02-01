@@ -33,6 +33,15 @@ const data = [
 
         linkGithub: 'https://github.com/vishallondhe48/react-recipe-app',
         linkLiveDemo: 'https://getrecipeapp.netlify.app/'
+    },
+    {
+        id: 5,
+        name: 'Ducati website redesign',
+        description: 'Ducati redesign website created based on design from irene butenko for practice purposes Used html, scss and javascript for the project',
+        image: 'https://pbs.twimg.com/media/ElbDh27XgAAaisb.jpg',
+
+        linkGithub: 'https://github.com/vishallondhe48/Ducati_redesign',
+        linkLiveDemo: 'https://ducatiwebsiteredesign.netlify.app/'
     }
 
 ]
