@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Nav.scss'
+import Logo from '../logo.svg';
 
 const Nav = () => {
     const [state, setState] = useState(false)
@@ -14,7 +15,9 @@ const Nav = () => {
         <nav>
             <div className="wrapper container">
                 {/* logo */}
-                <a href="/" id='logo'>vishal</a>
+                <a href="/" id='logo'>
+                    <img src={Logo} alt="logo" width={40} height={40} />
+                </a>
 
 
                 {/* hamburger toggle */}
